@@ -1,0 +1,9 @@
+*
+!.gitignore
+!README.md
+!post_content_v*.html
+!magnatone_preview_v*.html
+!patch_v*.py
+!patch_v*.ps1
+!loops/
+!loops/*

@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magnatone True Vibrato: Bending Pitch Before It Was Possible | Illicit Apothecary</title>
+<style>
+body{margin:0;background:#0f0d0a;color:#ded5c6;font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:1.75}
+main{max-width:760px;margin:0 auto;padding:48px 20px 80px}
+h1{font-size:34px;line-height:1.2;color:#f5efe4}
+h2{font-size:26px;margin-top:1.8em;color:#f5efe4}
+h3{color:#f5efe4}
+a{color:#f2a33c}
+.byline{font-size:14px;color:#8d8475;letter-spacing:.05em;text-transform:uppercase}
+</style></head><body><main>
+<h1>Magnatone True Vibrato: Bending Pitch Before It Was Possible</h1>
+<p class="byline">Illicit Apothecary &middot; Circuits That Should Not Exist</p>
+<div class="iam-post">
+<style>
+.iam-post .iam-card{background:#17130f;border:1px solid #2e2820;border-radius:14px;padding:22px 22px 18px;margin:2em 0;color:#efe8dc;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.iam-post .iam-card h4{margin:0 0 4px;font-size:15px;letter-spacing:.04em;text-transform:uppercase;color:#f2a33c;font-weight:600}
+.iam-post .iam-card .iam-sub{margin:0 0 14px;font-size:13px;color:#9a9183}
+.iam-post .iam-card canvas{width:100%;height:auto;display:block;border-radius:8px}
+.iam-post .iam-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px}
+.iam-post .iam-btn{background:#241d15;color:#efe8dc;border:1px solid #4a3f30;border-radius:8px;padding:8px 14px;font-size:13px;cursor:pointer;font-family:inherit;transition:border-color .12s ease,background-color .12s ease,transform .08s ease}
+.iam-post .iam-btn:hover{border-color:#f2a33c}
+.iam-post .iam-btn:active{transform:translateY(1px)}
+.iam-post .iam-btn:focus-visible,.iam-post .iam-pick:focus-visible{outline:2px solid #f2a33c;outline-offset:2px}
+.iam-post .iam-btn.iam-on{background:#f2a33c;color:#17130f;border-color:#f2a33c;font-weight:600}
+.iam-post .iam-btn[disabled]{opacity:.35;cursor:not-allowed}
+.iam-post .iam-sl{display:flex;align-items:center;gap:8px;font-size:12.5px;color:#c8bfae}
+.iam-post .iam-sl span{font-variant-numeric:tabular-nums;min-width:52px}
+.iam-post .iam-sl input{accent-color:#f2a33c;width:110px}
+.iam-post .iam-sl input:focus-visible{outline:2px solid #f2a33c;outline-offset:3px;border-radius:4px}
+.iam-post .iam-sl.iam-off{opacity:.35}
+.iam-post .iam-note{font-size:12px;color:#8d8475;margin-top:10px}
+.iam-post .iam-read{font-size:13px;color:#e8705a;font-weight:600;min-width:90px;text-align:right;font-variant-numeric:tabular-nums}
+.iam-post .iam-picks{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin:6px 0 4px}
+.iam-post .iam-pick{background:#1f1913;border:1px solid #3a3128;border-radius:10px;padding:8px 8px 10px;cursor:pointer;text-align:center;font-family:inherit;color:#efe8dc;transition:border-color .12s ease,background-color .12s ease}
+.iam-post .iam-pick:hover{border-color:#f2a33c}
+.iam-post .iam-pick svg{width:100%;height:auto;display:block;margin-bottom:6px}
+.iam-post .iam-pick b{display:block;font-size:13px}
+.iam-post .iam-pick small{display:block;font-size:11px;color:#9a9183;line-height:1.35}
+.iam-post .iam-pick.iam-on{border-color:#f2a33c;background:#2a2016;box-shadow:inset 0 0 0 1px #f2a33c}
+.iam-post .iam-pick .iam-chk{display:inline-block;margin-top:5px;font-size:11px;color:#f2a33c;font-weight:600;visibility:hidden}
+.iam-post .iam-pick.iam-on .iam-chk{visibility:visible}
+.iam-post table.iam-tbl{width:100%;border-collapse:collapse;font-size:14.5px;margin:1em 0 2em}
+.iam-post table.iam-tbl th,.iam-post table.iam-tbl td{text-align:left;padding:8px 10px;border-bottom:1px solid rgba(128,118,100,.25);vertical-align:top}
+.iam-post table.iam-tbl th{font-size:12.5px;text-transform:uppercase;letter-spacing:.05em;opacity:.7}
+.iam-post .iam-st{color:#f2a33c;font-weight:700;white-space:nowrap}
+.iam-post sup a{text-decoration:none;opacity:.75}
+.iam-post ol.iam-src{font-size:14px;line-height:1.8}
+</style>
+
+<p><em>Part of an ongoing series on the strange and beautiful circuits inside vintage audio gear. I design and build analog audio hardware here at Illicit Apothecary, and before I build anything I model it. Every moving graphic and every sound demo in this post is generated live by a model of the actual Magnatone circuit, so what you are seeing and hearing is the math of the real thing, not a recording.</em></p>
+
+<h2>The amp company that bent time</h2>
+
+<p>In 1957 nearly every "vibrato" knob on every amplifier in every music store in America was lying to you. Turn it up and the volume pulsed. The pitch of the note never moved a single cent. That effect is tremolo, and it is lovely, but it is not vibrato, and the industry had simply swapped the words. Fender stamped "vibrato" on channels that wobbled loudness, then stamped "synchronized tremolo" on the Stratocaster bridge, a device that actually bends pitch. Guitarists have been using both terms backwards ever since.<sup><a href="#iam-s1">[1]</a></sup></p>
+
+<p>Into that confusion walked a small California company best known for mother-of-pearl covered lap steels, and shipped something truly different: an amplifier whose built-in effect pushed the actual pitch of the note sharp and flat, smoothly, like a singer's throat. Magnatone was so proud of it that the company put a "V" emblem on the grille of every amp that had it, and two Vs on the stereo flagship.<sup><a href="#iam-s2">[2]</a></sup> Their sales literature called it F.M. Vibrato, for full modulation, and for once the marketing was underselling it.<sup><a href="#iam-s3">[3]</a></sup></p>
+
+<p>Here is the difference you can see and hear. Press play; nothing on this page makes a sound until you do.</p>
+
+<!-- ============ WIDGET 1: TREMOLO VS VIBRATO ============ -->
+<div class="iam-card" id="iamW1">
+<h4>Tremolo vs vibrato</h4>
+<p class="iam-sub">Tremolo wiggles loudness. Vibrato wiggles pitch. Watch the wavelength.</p>
+<canvas id="iamW1c" width="900" height="300" role="img" aria-label="Two animated waveforms: a tremolo wave whose height pulses, and a vibrato wave whose wavelength stretches and squeezes">Animated comparison of tremolo and vibrato waveforms.</canvas>
+<div class="iam-row">
+<button class="iam-btn" id="iamW1trem">&#9654; Hear tremolo</button>
+<button class="iam-btn" id="iamW1vib">&#9654; Hear vibrato</button>
+<button class="iam-btn" id="iamW1stop">&#9632; Stop</button>
+</div>
+<p class="iam-note">Synthesized guitar phrase, generated in your browser. In the tremolo wave the peaks stay put and only the height breathes. In the vibrato wave the height stays put and the peaks slide closer together and farther apart: the note itself is rising and falling.</p>
+</div>
+
+<p>Almost every amp of the era gave you the top trace. Magnatone gave you the bottom one. (Fender's brownface-era "harmonic vibrato" is its own fascinating beast, a two-band crossfade that fakes motion beautifully without ever bending pitch. It deserves its own deep dive, and it will get one here soon.)</p>
+
+<h2>Why real vibrato was considered close to impossible</h2>
+
+<p>To understand why nobody else did this, think about what pitch shifting actually requires. Frequency is the rate at which a waveform's phase goes by. To raise the pitch of a signal passing through a box, the box has to deliver the waveform faster than it arrived, and to lower it, slower. A box that changes pitch is a box that manipulates time.</p>
+
+<p>The honest way to do that is a modulated delay line: store the signal briefly, then read it back out while smoothly varying how far behind the write point you are reading. Sweep the delay shorter and pitch rises; sweep it longer and pitch falls. Every chorus and vibrato pedal on your board today works exactly this way. And in 1957 every known way of doing it was unavailable. Tape could store audio, but a tape loop with a wobbling playback speed was a studio trick, not something you could cram next to a 6V6 and sell for $179.50. The bucket brigade chip, the BBD that made Small Stones and Memory Men possible, would not be invented at Philips until 1969. Digital memory for audio was science fiction. There was, on paper, no way to build a time machine out of 1957 parts.</p>
+
+<p>Magnatone's engineer found the loophole, and the loophole is phase. An all-pass filter passes every frequency at the same volume but delays each frequency by a different amount; the steeper its phase curve, the more delay it imposes around a given frequency. That is the sleight of hand: over a limited band, a swept phase-shift network behaves exactly like a modulated delay line. It stores no samples and has no memory, yet while its phase is in motion, every note inside its band comes out pitch-shifted, because a changing phase is indistinguishable from a changing frequency. The derivative of phase is frequency. Sweep 130 degrees of phase back and forth a few times a second and you are bending pitch by real, measurable cents, with nothing but a capacitor and a resistor that knows how to change its mind.</p>
+<script>
+(function(){
+"use strict";
+/* Illicit Apothecary: shared pluck synth (Karplus-Strong) */
+window.iamSynth = window.iamSynth || function(ctx){
+  var sr = ctx.sampleRate;
+  var notes = [164.81,196.00,246.94,329.63,293.66,246.94,196.00,164.81];
+  var step = 0.42, len = Math.floor(sr*(notes.length*step+1.2));
+  var buf = ctx.createBuffer(1,len,sr), d = buf.getChannelData(0);
+  for(var n=0;n<notes.length;n++){
+    var N = Math.round(sr/notes[n]), ks = new Float32Array(N), i;
+    var seed = 1234567+n*98765;
+    for(i=0;i<N;i++){ seed=(seed*1103515245+12345)&0x7fffffff; ks[i]=(seed/0x3fffffff-1); }
+    for(i=1;i<N;i++){ ks[i]=0.5*(ks[i]+ks[i-1]); }
+    var start = Math.floor(sr*step*n), dur = Math.floor(sr*2.2), p=0;
+    for(i=0;i<dur && start+i<len;i++){
+      var cur=ks[p], nxt=ks[(p+1)%N];
+      ks[p]=0.498*(cur+nxt);
+      d[start+i]+=cur*0.28*Math.exp(-i/(sr*1.3));
+      p=(p+1)%N;
+    }
+  }
+  var src = ctx.createBufferSource();
+  src.buffer=buf; src.loop=true; src.loopEnd=notes.length*step;
+  return src;
+};
+
+/* Widget 1: tremolo vs vibrato */
+var cv=document.getElementById("iamW1c"); if(!cv) return;
+var g=cv.getContext("2d");
+var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+function draw(t){
+  var W=cv.width,H=cv.height,mid1=H*0.27,mid2=H*0.75,amp=H*0.17;
+  g.clearRect(0,0,W,H);
+  g.font="12px sans-serif";g.fillStyle="#9a9183";
+  g.fillText("TREMOLO  (volume moves, pitch frozen)",16,mid1-amp-12);
+  g.fillText("VIBRATO  (pitch moves, volume frozen)",16,mid2-amp-12);
+  g.strokeStyle="#2e2820";g.beginPath();g.moveTo(0,mid1);g.lineTo(W,mid1);g.moveTo(0,mid2);g.lineTo(W,mid2);g.stroke();
+  var lfo=Math.sin(2*Math.PI*0.9*t);
+  g.lineWidth=2;g.strokeStyle="#6fa8ff";g.beginPath();
+  for(var x=0;x<=W;x++){
+    var y=mid1-amp*(0.62+0.38*lfo)*Math.sin(0.085*x-4*t);
+    x===0?g.moveTo(x,y):g.lineTo(x,y);
+  }
+  g.stroke();
+  g.strokeStyle="#f2a33c";g.beginPath();
+  for(x=0;x<=W;x++){
+    var y2=mid2-amp*Math.sin(0.085*x*(1+0.13*lfo)-4*t);
+    x===0?g.moveTo(x,y2):g.lineTo(x,y2);
+  }
+  g.stroke();
+}
+if(reduce) draw(0.3);
+(function loop(){ if(!reduce||src) draw(performance.now()/1000); requestAnimationFrame(loop); })();
+
+var actx=null,src=null,nodes=[];
+function stopAll(){ nodes.forEach(function(n){try{n.disconnect();}catch(e){}});
+  if(src){try{src.stop();}catch(e){} src=null;} nodes=[];
+  ["iamW1trem","iamW1vib"].forEach(function(id){document.getElementById(id).classList.remove("iam-on");});
+}
+function play(mode,btn){
+  if(!actx) actx=new (window.AudioContext||window.webkitAudioContext)();
+  actx.resume(); stopAll();
+  src=window.iamSynth(actx);
+  var out=actx.createGain(); out.gain.value=0.9; out.connect(actx.destination); nodes.push(out);
+  if(mode==="trem"){
+    var amp=actx.createGain(); amp.gain.value=0.6;
+    var lfo=actx.createOscillator(); lfo.frequency.value=5.5;
+    var lg=actx.createGain(); lg.gain.value=0.4;
+    lfo.connect(lg); lg.connect(amp.gain); lfo.start();
+    src.connect(amp); amp.connect(out); nodes.push(amp,lfo,lg);
+  } else {
+    var dl=actx.createDelay(0.05); dl.delayTime.value=0.006;
+    var lfo2=actx.createOscillator(); lfo2.frequency.value=5.5;
+    var mg=actx.createGain(); mg.gain.value=0.00045;
+    lfo2.connect(mg); mg.connect(dl.delayTime); lfo2.start();
+    src.connect(dl); dl.connect(out); nodes.push(dl,lfo2,mg);
+  }
+  src.start(); btn.classList.add("iam-on");
+}
+document.getElementById("iamW1trem").onclick=function(){play("trem",this);};
+document.getElementById("iamW1vib").onclick=function(){play("vib",this);};
+document.getElementById("iamW1stop").onclick=stopAll;
+})();
+</script>
+
+<h2>A patent, an organ company, and a resistor made of sand</h2>
+
+<p>The man who built it was Don L. Bonham, who became Magnatone's chief engineer in early 1957 and folded his vibrato work into the new Custom 200 series that same year.<sup><a href="#iam-s4">[4]</a></sup> He came from the organ world: he had been patenting phase-shift vibrato circuits since 1954 at Pacific Mercury, the company behind Thomas organs, and the group of businessmen who bought Magnatone in 1957 was led by F. Roy Chilton, who was involved with Thomas Organ himself. Two years later the same people bought the bankrupt Estey Organ company outright.<sup><a href="#iam-s5">[5]</a></sup> The core idea traces back to a 1953 oscilloscope measurement trick by Robert Moses: a resistance-capacitance bridge whose output phase swings as you vary the resistance arm. In October 1958 Bonham filed the patent that defines the Magnatone sound, number 2,988,706, granted in June 1961, with two stereo-vibrato patents following in March 1959. He appears to have left by mid-1961; Estey kept building the circuit under license and renamed it Stereo F.M. Vibrato.<sup><a href="#iam-s5">[5]</a></sup></p>
+
+<p>The missing piece was the thing that varies the resistance. A pot needs a hand to turn it. Bonham used varistors: little discs of sintered silicon carbide whose resistance collapses as the voltage across them rises. Feed them a slow throbbing voltage from a low frequency oscillator and they become a resistor that changes its mind several times a second, swinging over a range of roughly twenty five to one, with no moving parts and no light bulbs. The part Magnatone used is understood to be the Carborundum (later Kanthal Globar) 233BNR-32, and the only company still making silicon carbide varistors today is Metrosil.<sup><a href="#iam-s5">[5]</a></sup> Billy Gibbons, talking to Vintage Guitar decades later, called the varistor "an oddball device," which from a man with his gear collection is a professional diagnosis.<sup><a href="#iam-s7">[7]</a></sup></p>
+
+<p>And here is the part that makes a Magnatone sound like a Magnatone rather than like a modern digital vibrato. Silicon carbide is viciously non-linear, and the non-linearity is lopsided: the varistor curve is gentle at the bottom of its range and steep at the top, the tube driving it clips harder in one direction than the other, and the resistor feeding the varistors compresses the top of the sweep. Send a clean sine wave into that chain and what comes out the other end is warped: the pitch snaps upward quickly, overshoots, and then sags back down slowly. In the model below, at full depth and around 1 kHz, the upward bend is nearly three times the size of the downward one. It is less like a sine wave and more like a wrist.</p>
+
+<p>A word for anyone hunting one of these amps: the varistors are the whole value of the thing, and they are not stable. Silicon carbide appears to be slightly hygroscopic, so decades of humidity shift the high-resistance end of the curve, two parts of the same type can differ by ten percent or more, and you cannot check one with a multimeter because the meter does not put enough voltage across it. Builders have cloned them from metal oxide varistor and resistor networks with decent results, but a sixty year old amp whose vibrato has gone shallow may just have had its varistors drift, or, worse, harvested.<sup><a href="#iam-s5">[5]</a></sup> The other camp disagrees. The archive that documents these amps says varistors rarely if ever fail, and that a dead vibrato is nearly always tubes, sockets, leaky coupling caps, or an oscillator that has stopped oscillating, so check all of that before you blame the sand. It also notes that the original schematics say only "varistor" with no part number, that Bonham himself described the original selection as slow and laborious, and that Estey sold off its remaining stock at factory moving sales between 1968 and 1972, which is why the real ones are now in collectors' drawers rather than on the market.<sup><a href="#iam-s23">[23]</a></sup></p>
+
+<!-- ============ WIDGET 2: THE MAGNATONE MACHINE ============ -->
+<div class="iam-card" id="iamW2">
+<h4>Inside the Magnatone sweep</h4>
+<p class="iam-sub">A live model of three circuits: Magnatone's varistor original, its 1967 lamp-and-photocell transistor version, and the Uni-Vibe. Pick a circuit and the switches, then press play.</p>
+<canvas id="iamW2c" width="900" height="330" role="img" aria-label="Three animated panels showing the oscillator waveform, the resistance sweep it produces, and the resulting pitch deviation in cents (or loudness in dB) over half a second">Animated panels of the vibrato model.</canvas>
+<div class="iam-row">
+<button class="iam-btn iam-on" id="iamW2tube">Original (varistor)</button>
+<button class="iam-btn" id="iamW2ss">'67 Transistor (lamp)</button>
+<button class="iam-btn" id="iamW2uv">Uni-Vibe (lamp)</button>
+<button class="iam-btn" id="iamW2play">&#9654; Play</button>
+</div>
+<div class="iam-row" role="group" aria-label="Effect, channel and Uni-Vibe mode switches">
+<span class="iam-sl">effect</span>
+<button class="iam-btn iam-on" id="iamW2vib" aria-pressed="true">Vibrato</button>
+<button class="iam-btn" id="iamW2trem" aria-pressed="false">Tremolo</button>
+<span class="iam-sl" style="margin-left:10px">channels</span>
+<button class="iam-btn iam-on" id="iamW2mono" aria-pressed="true">Mono</button>
+<button class="iam-btn" id="iamW2st" aria-pressed="false">Stereo</button>
+<span class="iam-sl" style="margin-left:10px" id="iamW2uvLbl">Uni-Vibe mode</span>
+<button class="iam-btn iam-on" id="iamW2uvVib" aria-pressed="true" disabled>Vibrato</button>
+<button class="iam-btn" id="iamW2uvCho" aria-pressed="false" disabled>Chorus</button>
+</div>
+<div class="iam-row">
+<div class="iam-sl">speed <input type="range" id="iamW2rate" min="2" max="10" step="0.1" value="5" aria-label="LFO speed in hertz"><span id="iamW2rateV">5.0 Hz</span></div>
+<div class="iam-sl">depth <input type="range" id="iamW2depth" min="5" max="100" step="1" value="100" aria-label="Vibrato depth percent"><span id="iamW2depthV">100%</span></div>
+<div class="iam-sl">center <input type="range" id="iamW2fc" min="0" max="1000" step="1" value="667" aria-label="Centre frequency of the displayed curve, 10 hertz to 10 kilohertz, logarithmic"><span id="iamW2fcV" style="min-width:64px">1.0 kHz</span></div>
+<div class="iam-sl">master <input type="range" id="iamW2vol" min="0" max="100" step="1" value="80" aria-label="Master volume percent"><span id="iamW2volV">80%</span></div>
+<span class="iam-read" id="iamW2cents">&nbsp;</span>
+</div>
+<p class="iam-note">Each panel shows half a second, so 2 Hz draws one cycle and 10 Hz draws five. Left: the oscillator output scaled by the depth control. Middle: the resistance sweep of the variable element (silicon carbide varistors, or a lamp lighting photocells). Right: what that sweep does to a tone at the centre frequency, in cents of pitch for vibrato or dB of loudness for tremolo; the readout gives the peak bend up and down. The centre slider (10 Hz to 10 kHz, logarithmic) changes the display only; in Tremolo it also becomes the loudness curve you hear. In stereo the left channel is red and the right is orange. Audio is the phrase from the first demo with the same melody an octave below and an octave above at half level, through a delay line modulated by the modeled sweep. Stereo on the two Magnatone circuits is the 280 countersweep. The Uni-Vibe never shipped in stereo, so its stereo settings are a what-if: Vibrato gives the swept signal in both channels with the right side 180 degrees out of phase, Chorus puts the swept signal left and the dry signal right; in mono, Vibrato is swept only and Chorus is a 50/50 mix, exactly as the pedal's switch does it.</p>
+</div>
+
+<p>Tony Price, who ran engineering at Estey from 1963 to 1965 and inherited the circuit from Bonham, had the plainest description of it: a triode's plate and cathode carry the same signal about 180 degrees apart, and the vibrato samples the output alternately from one and then the other at a rate set by the varistors, so the phase swings back and forth and the ear hears a Doppler-like shift.<sup><a href="#iam-s23">[23]</a></sup> Two details of the real circuit are worth savoring. First, the bridge has a corner near 1 kHz. Below it the circuit behaves like a true modulated delay line, so every note from a bass low B up through the guitar's midrange gets the same bend in cents; above it the phase shift runs out of room and the bend tapers off, which keeps the brittle top from sounding seasick. Drag the centre slider in the widget and watch the readout: the numbers barely move from 10 Hz up to a few hundred, then they shrink as you climb past 1 kHz. Second, the low frequency oscillator itself runs overdriven and slightly asymmetric by design, so the sweep arrives pre-bent before the varistors even touch it. None of this reads like an accident. It reads like voicing.</p>
+<script>
+(function(){
+"use strict";
+/* ======================================================================
+   Illicit Apothecary circuit model library, shared by the widgets below.
+   Ported from the Python simulation of the Magnatone vibrato chain.
+   ====================================================================== */
+var W1K=2*Math.PI*1000, BC=820e-12, RSCALE=0.291;
+var M=window.iamModel={W1K:W1K};
+
+/* The tube LFO: measured harmonic series of the simulated 12AX7 phase-shift
+   oscillator, overdriven, asymmetrically clipped and filtered. Already
+   lopsided before the varistors see it. Unit-sine energy scale. */
+var HR=[0,0.076416,-0.057013,-0.036712,0.018901,-0.0119,0.012215,-0.001962,-0.004433,0.003117,-0.002671,0.002499,-0.00022];
+var HI=[0,0.991906,-0.063721,0.036954,-0.024989,-0.004372,0.009312,-0.005304,0.005752,-0.003041,-0.001415,0.001997,-0.001384];
+M.lfoWave=function(th){ var v=0,k; for(k=1;k<HR.length;k++){ v+=HR[k]*Math.cos(k*th)+HI[k]*Math.sin(k*th); } return v; };
+
+/* Silicon carbide varistor: quadratic fit in log-log space to the measured
+   V-I points of the Carborundum 233BNR-32 (0.01 mA at 32 V ... 1 mA at 105 V). */
+var VA=-3.112347306945972, VB=-7.118828817046713, VC=1.3545083788750394;
+function ivar(v){ var lv=Math.log(Math.max(v,0.001)); return Math.exp(VA+VB*lv+VC*lv*lv); }
+function solveV(voc){ var lo=0.5,hi=400,i,mid;
+  for(i=0;i<40;i++){ mid=0.5*(lo+hi); if(mid+360000*ivar(mid)>voc) hi=mid; else lo=mid; }
+  return 0.5*(lo+hi); }
+/* omega: the angular frequency of the note going through the bridge.
+   The phase shift of a Moses bridge is 2*atan(omega*R*C): below the corner
+   it acts as a delay line (same bend in cents for every note), above it the
+   phase saturates and the bend tapers off. */
+M.tubeStage=function(lfoVal,depth,omega){
+  omega=omega||W1K;
+  var voc=Math.min(250,Math.max(30,140+depth*110*lfoVal));
+  var vv=solveV(voc), R=vv/ivar(vv)/2;
+  return {R:R, phi:2*Math.atan(omega*R*RSCALE*BC)};
+};
+
+function finish(c){
+  var N=c.phi.length,i,pmin=1e9,pmax=-1e9;
+  for(i=0;i<N;i++){ if(c.phi[i]<pmin)pmin=c.phi[i]; if(c.phi[i]>pmax)pmax=c.phi[i]; }
+  c.pmin=pmin; c.pmax=pmax; c.rmin=1e18; c.rmax=0;
+  for(i=0;i<N;i++){ if(c.rr[i]<c.rmin)c.rmin=c.rr[i]; if(c.rr[i]>c.rmax)c.rmax=c.rr[i]; }
+  c.am=new Float32Array(N);
+  var span=pmax-pmin;
+  for(i=0;i<N;i++){ var pn=span>0?(c.phi[i]-pmin)/span:0.5; c.am[i]=1-c.amDepth*(1-pn); }
+  return c;
+}
+
+/* One cycle of the ORIGINAL tube chain. stages: 1 (two varistors, 210/213/410/413)
+   or 2 (cascade, 280/480/M14, each stage driven a little less hard). */
+M.tubeCycle=function(depth,stages,invert,omega){
+  var N=512,i,c={lfo:new Float32Array(N),rr:new Float32Array(N),phi:new Float32Array(N),amDepth:0.09};
+  var d=stages===2?depth*0.75:depth, sg=invert?-1:1;
+  for(i=0;i<N;i++){
+    var u=M.lfoWave(2*Math.PI*i/N);
+    var s=M.tubeStage(u*sg,d,omega);
+    c.lfo[i]=u*depth; c.rr[i]=s.R; c.phi[i]=stages===2?2*s.phi:s.phi;
+  }
+  return finish(c);
+};
+
+/* Shared lamp + photocell dynamics: filament thermal lag, light rising as
+   about the 3.5th power of drive, photocell fast to brighten, slow to darken
+   (tau = [lamp, cell brighten, cell darken] in seconds).
+   Textbook device behaviour, not measured from an amp. */
+function lampLdr(rate,depth,invert,bias,swing,cellFn,phiFn,amDepth,tau){
+  var N=512,i,cyc,c={lfo:new Float32Array(N),rr:new Float32Array(N),phi:new Float32Array(N),amDepth:amDepth};
+  tau=tau||[0.025,0.012,0.060];
+  var dt=1/(rate*N), kLamp=1-Math.exp(-dt/tau[0]), kOn=1-Math.exp(-dt/tau[1]), kOff=1-Math.exp(-dt/tau[2]);
+  var Bf=0.12, R=cellFn(0.12), sg=invert?-1:1;
+  for(cyc=0;cyc<8;cyc++){
+    for(i=0;i<N;i++){
+      var th=2*Math.PI*i/N, v=(Math.sin(th)+0.03*Math.sin(2*th))*sg;
+      var drive=Math.max(0,bias+swing*depth*v);
+      var B=Math.pow(drive,3.5);
+      Bf+=(B-Bf)*kLamp;
+      var Rt=cellFn(Bf);
+      R+=(Rt-R)*(Rt<R?kOn:kOff);
+      if(cyc===7){ c.lfo[i]=v*depth; c.rr[i]=R; c.phi[i]=phiFn(R); }
+    }
+  }
+  return finish(c);
+}
+
+/* 1967 TRANSISTOR Magnatone (M35 vibrato board 35-0060): two stages per
+   channel, each a CdS photocell shunted by 100k against 0.01 uF, lamp #1869. */
+M.ssCycle=function(rate,depth,invert,omega){
+  omega=omega||W1K; var SSC=0.01e-6;
+  return lampLdr(rate,depth,invert,0.55,0.45,
+    function(B){ var Rl=3e3*Math.pow(B+0.003,-0.85); return 1/(1/100e3+1/Rl); },
+    function(R){ return 2*(2*Math.atan(omega*R*SSC)); },0.025);
+};
+
+/* UNI-VIBE (Shin-ei, 1968): four cascaded transistor phase-splitter stages,
+   all four photocells under one lamp, staggered capacitors 0.015 uF, 0.22 uF,
+   470 pF and 4.7 nF (R.G. Keen's analysis). The lamp idles about half bright,
+   so the cells sit mid-range and the intensity control swings them both ways. */
+var UVC=[0.015e-6,0.22e-6,470e-12,4.7e-9];
+M.uvCycle=function(rate,depth,invert,omega){
+  omega=omega||W1K;
+  /* Keen notes the Uni-Vibe LFO grows with speed, a first-order fix for the lamp's lag. */
+  var swing=Math.min(0.5,0.32+0.03*rate);
+  return lampLdr(rate,depth,invert,0.5,swing,
+    function(B){ return 500*Math.pow(B+0.0006,-1.0); },
+    function(R){ var p=0,k; for(k=0;k<4;k++) p+=2*Math.atan(omega*R*UVC[k]); return p; },0.02,[0.020,0.015,0.050]);
+};
+
+/* Turn a pitch cycle into a tremolo cycle: the same sweep shape, applied to
+   loudness instead of phase. */
+M.tremFrom=function(c,depth){
+  var N=c.phi.length,i,t={lfo:c.lfo,rr:c.rr,phi:c.phi,pmin:c.pmin,pmax:c.pmax,rmin:c.rmin,rmax:c.rmax,am:new Float32Array(N)};
+  var span=c.pmax-c.pmin;
+  for(i=0;i<N;i++){ var pn=span>0?(c.phi[i]-c.pmin)/span:0.5; t.am[i]=1-0.85*depth*(1-pn); }
+  return t;
+};
+/* Rotate a cycle by a fraction of a period (used for a stereo channel that lags). */
+M.rotate=function(c,frac){
+  var N=c.phi.length,k=Math.round(frac*N),o={lfo:new Float32Array(N),rr:new Float32Array(N),phi:new Float32Array(N),am:new Float32Array(N),pmin:c.pmin,pmax:c.pmax,rmin:c.rmin,rmax:c.rmax},i;
+  for(i=0;i<N;i++){ var j=(i-k+N)%N; o.lfo[i]=c.lfo[j]; o.rr[i]=c.rr[j]; o.phi[i]=c.phi[j]; o.am[i]=c.am[j]; }
+  return o;
+};
+
+M.centsTrace=function(c,rate,f0){
+  f0=f0||1000;
+  var N=c.phi.length,out=new Float32Array(N),dt=1/(rate*N),i,mn=0,mx=0;
+  for(i=0;i<N;i++){
+    var d=(c.phi[(i+1)%N]-c.phi[i])/dt/(2*Math.PI);
+    out[i]=1200*Math.log2(Math.max(1+d/f0,1e-6));
+    if(out[i]<mn)mn=out[i]; if(out[i]>mx)mx=out[i];
+  }
+  return {c:out,min:mn,max:mx};
+};
+M.dbTrace=function(c){
+  var N=c.am.length,out=new Float32Array(N),i,mn=0,mx=-99;
+  for(i=0;i<N;i++){ out[i]=20*Math.log10(Math.max(c.am[i],1e-3)); if(out[i]<mn)mn=out[i]; if(out[i]>mx)mx=out[i]; }
+  return {c:out,min:mn,max:mx};
+};
+
+/* Turn one cycle into a band-limited periodic wave the audio graph can loop. */
+M.periodic=function(ctx,arr,K){
+  var N=arr.length,k,n,mean=0,real=new Float32Array(K+1),imag=new Float32Array(K+1);
+  for(n=0;n<N;n++) mean+=arr[n]; mean/=N;
+  for(k=1;k<=K;k++){ var re=0,im=0;
+    for(n=0;n<N;n++){ var a=2*Math.PI*k*n/N, x=arr[n]-mean; re+=x*Math.cos(a); im+=x*Math.sin(a); }
+    real[k]=2*re/N; imag[k]=2*im/N; }
+  return {wave:ctx.createPeriodicWave(real,imag,{disableNormalization:true}),mean:mean};
+};
+
+/* A voice: delay line whose delay follows the modeled phase (phi / omega),
+   plus the modeled amplitude curve. All voices started at t0 stay phase-locked.
+   opts.pitch / opts.am switch the two halves on and off. */
+M.voice=function(ctx,src,dest,cyc,rate,t0,omega,opts){
+  omega=omega||W1K; opts=opts||{pitch:true,am:true};
+  var p=M.periodic(ctx,cyc.phi,40), a=M.periodic(ctx,cyc.am,40);
+  var osc=ctx.createOscillator(); osc.setPeriodicWave(p.wave); osc.frequency.value=rate;
+  var sec=ctx.createGain(); sec.gain.value=opts.pitch?1/omega:0;
+  var dl=ctx.createDelay(0.2); dl.delayTime.value=0.006+p.mean/omega;
+  osc.connect(sec); sec.connect(dl.delayTime);
+  var amo=ctx.createOscillator(); amo.setPeriodicWave(a.wave); amo.frequency.value=rate;
+  var amk=ctx.createGain(); amk.gain.value=opts.am?1:0;
+  var amg=ctx.createGain(); amg.gain.value=opts.am?a.mean:1;
+  amo.connect(amk); amk.connect(amg.gain);
+  src.connect(dl); dl.connect(amg); amg.connect(dest);
+  osc.start(t0); amo.start(t0);
+  var pitchOn=!!opts.pitch, amOn=!!opts.am, lastMean=a.mean;
+  function apply(){ sec.gain.value=pitchOn?1/omega:0; amk.gain.value=amOn?1:0; amg.gain.value=amOn?lastMean:1; }
+  return {
+    nodes:[osc,sec,dl,amo,amk,amg],
+    update:function(c2,r2,om2){
+      if(om2) omega=om2;
+      var p2=M.periodic(ctx,c2.phi,40), a2=M.periodic(ctx,c2.am,40);
+      osc.setPeriodicWave(p2.wave); amo.setPeriodicWave(a2.wave);
+      osc.frequency.value=r2; amo.frequency.value=r2;
+      dl.delayTime.value=0.006+p2.mean/omega; lastMean=a2.mean; apply();
+    },
+    enable:function(flag){ pitchOn=flag; amOn=flag; apply(); },
+    setPitch:function(flag){ pitchOn=flag; apply(); },
+    setAm:function(flag){ amOn=flag; apply(); }
+  };
+};
+
+/* A single plucked note at any pitch: a few decaying harmonics, looped. */
+M.pluck=function(ctx,f0){
+  var sr=ctx.sampleRate, len=Math.floor(sr*1.6), buf=ctx.createBuffer(1,len,sr), d=buf.getChannelData(0), i,k;
+  var nh=Math.max(2,Math.min(10,Math.floor(sr*0.45/f0)));
+  for(k=1;k<=nh;k++){
+    var amp=0.32/k, dec=0.9+0.45*k, fk=f0*k*(1+0.0004*(k-1));
+    if(fk>sr*0.45) break;
+    for(i=0;i<len;i++){ var t=i/sr; d[i]+=amp*Math.exp(-dec*t)*Math.sin(2*Math.PI*fk*t); }
+  }
+  for(i=0;i<Math.floor(sr*0.004);i++) d[i]*=i/(sr*0.004);
+  var tail=Math.floor(sr*0.05); for(i=0;i<tail;i++) d[len-1-i]*=i/tail;
+  var src=ctx.createBufferSource(); src.buffer=buf; src.loop=true;
+  return src;
+};
+
+/* The phrase from the first demo, with the same melody an octave below and
+   an octave above at half level. */
+M.phrase=function(ctx){
+  var sr=ctx.sampleRate;
+  var notes=[164.81,196.00,246.94,329.63,293.66,246.94,196.00,164.81];
+  var step=0.42, len=Math.floor(sr*(notes.length*step+1.2));
+  var buf=ctx.createBuffer(1,len,sr), d=buf.getChannelData(0);
+  var layers=[[1,1.0],[0.5,0.5],[2,0.5]], L, n, i;
+  for(L=0;L<layers.length;L++){
+    for(n=0;n<notes.length;n++){
+      var f=notes[n]*layers[L][0], N=Math.round(sr/f), ks=new Float32Array(N);
+      var seed=1234567+n*98765+L*4321;
+      for(i=0;i<N;i++){ seed=(seed*1103515245+12345)&0x7fffffff; ks[i]=(seed/0x3fffffff-1); }
+      for(i=1;i<N;i++){ ks[i]=0.5*(ks[i]+ks[i-1]); }
+      var g=L===2?0.4995:0.498;
+      var start=Math.floor(sr*step*n), dur=Math.floor(sr*2.2), p=0;
+      for(i=0;i<dur && start+i<len;i++){
+        var cur=ks[p], nxt=ks[(p+1)%N];
+        ks[p]=g*(cur+nxt);
+        d[start+i]+=cur*0.28*layers[L][1]*Math.exp(-i/(sr*1.3));
+        p=(p+1)%N;
+      }
+    }
+  }
+  var src=ctx.createBufferSource(); src.buffer=buf; src.loop=true; src.loopEnd=notes.length*step;
+  return src;
+};
+
+/* ---------------------- Widget 2: inside the sweep ---------------------- */
+var cv=document.getElementById("iamW2c"); if(!cv) return;
+var g=cv.getContext("2d");
+var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var rate=5, depth=1, vol=0.8, fcv=667, circuit="tube", fx="vib", stereo=false, uvMode="vib", playing=false, WIN=0.5;
+function fc(){ return 10*Math.pow(10,3*fcv/1000); }
+function fcLabel(){ var f=fc(); return f<1000?Math.round(f)+" Hz":(f/1000).toFixed(f<9950?1:0)+" kHz"; }
+/* CD/CR: curves at the centre frequency (what the panels show).
+   AL/AR: curves the audio uses (the 1 kHz reference for pitch; the display curve for tremolo). */
+var CL=null,CR=null,TL=null,TR=null,AL=null,AR=null;
+function rawCycle(invert,om){
+  if(circuit==="tube") return M.tubeCycle(depth,1,invert,om);
+  if(circuit==="ss") return M.ssCycle(rate,depth,invert,om);
+  return M.uvCycle(rate,depth,invert,om);
+}
+function tremFromTrace(c,tr){
+  var N=c.phi.length,i,span=tr.max-tr.min,t={lfo:c.lfo,rr:c.rr,phi:c.phi,pmin:c.pmin,pmax:c.pmax,rmin:c.rmin,rmax:c.rmax,am:new Float32Array(N)};
+  for(i=0;i<N;i++){ var pn=span>0?(tr.c[i]-tr.min)/span:0.5; t.am[i]=1-0.85*depth*(1-pn); }
+  return t;
+}
+function rebuild(){
+  var omd=2*Math.PI*fc(), f=fc(), trem=(fx==="trem");
+  CL=rawCycle(false,omd); CR=stereo?rawCycle(true,omd):null;
+  var PL=M.centsTrace(CL,rate,f), PR=CR?M.centsTrace(CR,rate,f):null;
+  if(trem){
+    CL=tremFromTrace(CL,PL); if(CR) CR=tremFromTrace(CR,PR);
+    TL=M.dbTrace(CL); TR=CR?M.dbTrace(CR):null;
+    AL=CL; AR=CR;
+  } else {
+    TL=PL; TR=PR;
+    AL=rawCycle(false,M.W1K); AR=stereo?rawCycle(true,M.W1K):null;
+  }
+  var el=document.getElementById("iamW2cents");
+  if(trem){ el.textContent=(CR?"L ":"")+"0 / "+TL.min.toFixed(1)+" dB"+(CR?"  R 0 / "+TR.min.toFixed(1)+" dB":""); }
+  else { el.textContent=(CR?"L ":"")+"+"+TL.max.toFixed(0)+" / "+TL.min.toFixed(0)+" cents"+(CR?"  R +"+TR.max.toFixed(0)+" / "+TR.min.toFixed(0)+" cents":"")+" at "+fcLabel(); }
+}
+rebuild();
+
+function panel(x0,label){ g.fillStyle="#9a9183"; g.font="11px sans-serif"; g.fillText(label,x0+4,16); }
+function trace(arr,x0,w,y0,h,lo,hi,color,ph){
+  var N=arr.length,x,y,i;
+  g.strokeStyle=color; g.lineWidth=2; g.beginPath();
+  for(x=0;x<=w;x++){
+    i=Math.floor((((x/w)*rate*WIN)%1)*(N-1));
+    y=y0+h-(h*(arr[i]-lo)/(hi-lo||1));
+    x===0?g.moveTo(x0+x,y):g.lineTo(x0+x,y);
+  }
+  g.stroke();
+  if(ph>=0){
+    i=Math.floor(((ph*rate*WIN)%1)*(N-1));
+    g.fillStyle=color; g.beginPath();
+    g.arc(x0+w*ph, y0+h-(h*(arr[i]-lo)/(hi-lo||1)), 4.5, 0, 7); g.fill();
+  }
+}
+function logArr(a){ var o=new Float32Array(a.length),i; for(i=0;i<a.length;i++) o[i]=Math.log(a[i]); return o; }
+function draw(ph){
+  var W=cv.width,H=cv.height,pad=14,pw=(W-4*pad)/3,y0=34,h=H-y0-30,i;
+  g.fillStyle="#120f0b"; g.fillRect(0,0,W,H);
+  var xs=[pad,2*pad+pw,3*pad+2*pw], trem=(fx==="trem");
+  var oscLabel=circuit==="tube"?"1. TUBE OSCILLATOR x depth, already bent":circuit==="ss"?"1. TRANSISTOR OSCILLATOR x depth":"1. UNI-VIBE OSCILLATOR x depth";
+  var swLabel=circuit==="tube"?"2. VARISTOR SWEEP (log, ":circuit==="ss"?"2. PHOTOCELL SWEEP (log, ":"2. PHOTOCELL SWEEP, 4 stages (log, ";
+  panel(xs[0],oscLabel);
+  panel(xs[1],swLabel+Math.round(CL.rmax/CL.rmin)+":1)");
+  panel(xs[2],trem?"3. LOUDNESS AT "+fcLabel()+", dB":"3. PITCH AT "+fcLabel()+", cents");
+  g.strokeStyle="#2e2820";
+  for(i=0;i<3;i++) g.strokeRect(xs[i],24,pw,H-54);
+  trace(CL.lfo,xs[0],pw,y0,h,-1.3,1.3,"#6fa8ff",ph);
+  var lo2=circuit==="tube"?30e3:circuit==="ss"?2e3:300, hi2=circuit==="tube"?1.6e6:circuit==="ss"?200e3:2e6;
+  trace(logArr(CL.rr),xs[1],pw,y0,h,Math.log(lo2),Math.log(hi2),"#f2a33c",ph);
+  var clo,chi;
+  if(trem){ clo=Math.min(TL.min,TR?TR.min:0)*1.15-1; chi=1; }
+  else { var mn=Math.min(TL.min,TR?TR.min:0), mx=Math.max(TL.max,TR?TR.max:0); clo=Math.min(mn*1.2-2,-15); chi=Math.max(mx*1.2+2,15); }
+  var zero=y0+h-(h*(0-clo)/(chi-clo));
+  g.strokeStyle="#3b352c"; g.beginPath(); g.moveTo(xs[2],zero); g.lineTo(xs[2]+pw,zero); g.stroke();
+  if(TR){
+    trace(TL.c,xs[2],pw,y0,h,clo,chi,"rgba(232,112,90,0.66)",ph);
+    trace(TR.c,xs[2],pw,y0,h,clo,chi,"rgba(242,163,60,0.66)",ph);
+    g.fillStyle="rgba(232,112,90,0.9)"; g.font="11px sans-serif"; g.fillText("L",xs[2]+pw-30,16);
+    g.fillStyle="rgba(242,163,60,0.9)"; g.fillText("R",xs[2]+pw-16,16);
+  } else {
+    trace(TL.c,xs[2],pw,y0,h,clo,chi,"#e8705a",ph);
+  }
+  g.fillStyle="#8d8475"; g.font="11px sans-serif";
+  g.fillText("half a second: "+(rate*WIN).toFixed(1)+" cycles at "+rate.toFixed(1)+" Hz",W/2-110,H-8);
+}
+
+/* audio */
+var actx=null,src=null,nodes=[],voices=[],master=null,t0=0;
+function stopAll(){
+  nodes.forEach(function(n){try{n.disconnect();}catch(e){}});
+  voices.forEach(function(v){v.nodes.forEach(function(n){try{n.disconnect();}catch(e){}});});
+  if(src){try{src.stop();}catch(e){} src=null;}
+  nodes=[];voices=[];playing=false;
+  var pb=document.getElementById("iamW2play"); pb.innerHTML="&#9654; Play"; pb.classList.remove("iam-on");
+  if(reduce) draw(-1);
+}
+function startAll(){
+  if(!actx) actx=new (window.AudioContext||window.webkitAudioContext)();
+  actx.resume(); stopAll(); rebuild();
+  src=M.phrase(actx);
+  var trem=(fx==="trem"), om=trem?2*Math.PI*fc():M.W1K, opts={pitch:!trem,am:true};
+  master=actx.createGain(); master.gain.value=vol*0.9; master.connect(actx.destination); nodes.push(master);
+  var mg=actx.createChannelMerger(2); mg.connect(master); nodes.push(mg);
+  var L=actx.createGain(),R=actx.createGain(); L.connect(mg,0,0); R.connect(mg,0,1); nodes.push(L,R);
+  t0=actx.currentTime+0.02;
+  if(circuit==="uv"&&uvMode==="cho"){
+    var dry=actx.createGain(); src.connect(dry); nodes.push(dry);
+    if(stereo){
+      /* what-if stereo chorus: swept left, dry right */
+      dry.gain.value=1; dry.connect(R);
+      voices.push(M.voice(actx,src,L,AL,rate,t0,om,opts));
+    } else {
+      /* the pedal's own Chorus: 50/50 swept and dry, mono */
+      dry.gain.value=0.5; dry.connect(L); dry.connect(R);
+      var wet=actx.createGain(); wet.gain.value=0.5; wet.connect(L); wet.connect(R); nodes.push(wet);
+      voices.push(M.voice(actx,src,wet,AL,rate,t0,om,opts));
+    }
+  } else if(stereo){
+    voices.push(M.voice(actx,src,L,AL,rate,t0,om,opts));
+    voices.push(M.voice(actx,src,R,AR,rate,t0,om,opts));
+  } else {
+    var bus=actx.createGain(); bus.connect(L); bus.connect(R); nodes.push(bus);
+    voices.push(M.voice(actx,src,bus,AL,rate,t0,om,opts));
+  }
+  src.start(t0); playing=true;
+  var pb=document.getElementById("iamW2play"); pb.innerHTML="&#9632; Stop"; pb.classList.add("iam-on");
+}
+function refresh(restart){
+  rebuild();
+  if(playing){
+    if(restart){ startAll(); }
+    else {
+      var om=(fx==="trem")?2*Math.PI*fc():M.W1K;
+      voices.forEach(function(v,i){ v.update(i===0?AL:AR,rate,om); });
+      if(master) master.gain.value=vol*0.9;
+    }
+  }
+  if(reduce) draw(-1);
+}
+function setBtn(id,on){ var b=document.getElementById(id); b.classList.toggle("iam-on",on); b.setAttribute("aria-pressed",on?"true":"false"); }
+function setCircuit(c){ circuit=c; setBtn("iamW2tube",c==="tube"); setBtn("iamW2ss",c==="ss"); setBtn("iamW2uv",c==="uv");
+  var uv=(c==="uv"); document.getElementById("iamW2uvVib").disabled=!uv; document.getElementById("iamW2uvCho").disabled=!uv;
+  document.getElementById("iamW2uvLbl").style.opacity=uv?"1":"0.35"; refresh(true); }
+function setFx(f){ fx=f; setBtn("iamW2vib",f==="vib"); setBtn("iamW2trem",f==="trem"); refresh(true); }
+function setStereo(s){ stereo=s; setBtn("iamW2mono",!s); setBtn("iamW2st",s); refresh(true); }
+function setUv(m){ uvMode=m; setBtn("iamW2uvVib",m==="vib"); setBtn("iamW2uvCho",m==="cho"); refresh(true); }
+document.getElementById("iamW2tube").onclick=function(){ setCircuit("tube"); };
+document.getElementById("iamW2ss").onclick=function(){ setCircuit("ss"); };
+document.getElementById("iamW2uv").onclick=function(){ setCircuit("uv"); };
+document.getElementById("iamW2vib").onclick=function(){ setFx("vib"); };
+document.getElementById("iamW2trem").onclick=function(){ setFx("trem"); };
+document.getElementById("iamW2mono").onclick=function(){ setStereo(false); };
+document.getElementById("iamW2st").onclick=function(){ setStereo(true); };
+document.getElementById("iamW2uvVib").onclick=function(){ setUv("vib"); };
+document.getElementById("iamW2uvCho").onclick=function(){ setUv("cho"); };
+document.getElementById("iamW2play").onclick=function(){ if(playing) stopAll(); else startAll(); };
+document.getElementById("iamW2uvLbl").style.opacity="0.35";
+function slider(id,fn){
+  var el=document.getElementById(id);
+  el.oninput=function(){ fn(parseFloat(this.value)); el.setAttribute("aria-valuetext",document.getElementById(id+"V").textContent); refresh(false); };
+}
+slider("iamW2rate",function(v){ rate=v; document.getElementById("iamW2rateV").textContent=v.toFixed(1)+" Hz"; });
+slider("iamW2depth",function(v){ depth=v/100; document.getElementById("iamW2depthV").textContent=Math.round(v)+"%"; });
+slider("iamW2vol",function(v){ vol=v/100; document.getElementById("iamW2volV").textContent=Math.round(v)+"%"; });
+slider("iamW2fc",function(v){ fcv=v; document.getElementById("iamW2fcV").textContent=fcLabel(); });
+
+if(reduce) draw(-1);
+(function loop(){
+    if(!reduce||playing){ var t=(actx&&playing)?(actx.currentTime-t0):performance.now()/1000; draw(((t%WIN)+WIN)%WIN/WIN); }
+    requestAnimationFrame(loop);
+  })();
+})();
+</script>
+
+<h2>Stereo vibrato in 1957, before most people owned a stereo</h2>
+
+<p>The Custom 280 did not stop at bending pitch. It carried two complete power amplifiers, two output transformers, and two speakers, with a single LFO driving the two vibrato channels in opposition: as one side sweeps sharp, the other sweeps flat. The pitch does not just wobble, it moves through the room, rocking between the speakers. Magnatone marked the occasion with that second V on the grille.<sup><a href="#iam-s2">[2]</a></sup> Retrofret's description of the 280 is the best one-liner anyone has written about it: "the closest electrical approximation to a Leslie speaker effect ever built into a guitar amplifier."<sup><a href="#iam-s8">[8]</a></sup></p>
+
+<p>Sit with the date for a second. The first mass-market stereo LPs reached American stores in 1958. Magnatone was shipping a guitar amplifier with countersweeping stereo pitch modulation while the average record player could not yet say the word stereo.</p>
+
+<p>The stereo amps that followed kept Bonham's eight-varistor layout, two cascaded modulator stages per side, and the later ones added a Stereo Vibrato switch that runs the two sides at the same phase for mono or out of phase for stereo. In the suitcase era that meant a 12DW7, two 12AU7s and eight varistors devoted to vibrato alone, and the sales literature called the result F.M. Stereo Vibrato; Bonham's own stereo patent frames the point of countersweeping as a way to "improve vibrato by reducing the effect of wandering pitch on reiterated tones," which is a lawyer's way of saying it swirls without going out of tune.<sup><a href="#iam-s23">[23]</a></sup> The archive that documents the M14 notes a lovely subtlety: because the varistors change slowly, the two countersweeping signals almost never cancel each other, which is why the stereo effect swirls instead of hollowing out.<sup><a href="#iam-s20">[20]</a></sup></p>
+<h2>Every vintage Magnatone with the real thing</h2>
+
+<p>Magnatone built tube amps with this circuit from 1957 until roughly 1967, when the company turned to solid state on its way out of the business entirely; amp production was discontinued shortly after the 1969 Estey merger into Electro-Learner.<sup><a href="#iam-s4">[4]</a></sup> Everything below is from that original run. The quick field check when a mystery Maggie turns up: look for the V. One V, mono vibrato. Two Vs, stereo.<sup><a href="#iam-s2">[2]</a></sup> The cheap student models skipped the circuit, so not every vintage Magnatone has it. Reverb is a separate question: none of the 1950s amps had it. It arrived with the 400 series in 1961, and only on the dearer models.<sup><a href="#iam-s20">[20]</a></sup></p>
+
+<table class="iam-tbl">
+<tr><th>Series</th><th>Years</th><th>Vibrato models</th><th>Reverb</th><th>Notes</th></tr>
+<tr><td>Custom 200</td><td>1957 to 1962</td><td>210, 213 Troubadour, 250, 260, <span class="iam-st">280 stereo</span></td><td>None</td><td>The 210 is the 5 watt single-ended student amp ($119.50 in 1959), the 213 the 18 watt two-6V6 workhorse with a two-varistor vibrato ($179.50 in 1957), whose catalog copy called the Big V "the first true musical vibrato."<sup><a href="#iam-s9">[9]</a></sup> The 250, a less common 20 watt 1x12 from about 1958, carries a bigger vibrato section (two 6CG7s and a 12DW7) in a 213-sized box.<sup><a href="#iam-s20">[20]</a></sup> The 260 runs four varistors.<sup><a href="#iam-s6">[6]</a></sup> The 280 is the twelve-tube, four-6973, two-12-inch stereo flagship at 50 watts peak.<sup><a href="#iam-s20">[20]</a></sup></td></tr>
+<tr><td>Custom 400</td><td>1961 to 1963</td><td>410 "Diana", 413, 415 "Clio", 431, 440, 450, 460 "Victory", <span class="iam-st">480 stereo</span></td><td>440, 450, 460 and 480</td><td>The 410 is a 210 with a bright switch ($119.95), the 413 a 213 with an updated chassis ($179.95), the 440 a 413 plus reverb ($239.95, 6EU7 reverb driver). The 450 ($299.95, 25 watts, a 12 and a 5x7 oval) is the 250 plus reverb, and the 460 ($399.95, 35 watts, two 6L6GCs, two 12s and two 5x7s) is the 260 plus reverb. Dealers often list the 460 as stereo; the archive shows one vibrato chain on two 6CG7s feeding both speakers, so it is the big mono amp of the line, not a 280. The 480 ($499.95, 50 watts, four 6973s, two 12s and two 5x7 ovals, eight varistors) drives its Hammond-style tank with a 6DR7 and recovers it with a germanium transistor, and feeds the reverb to stereo output No. 2 only, which is why the two sides are wired in opposite polarity.<sup><a href="#iam-s20">[20]</a></sup><sup><a href="#iam-s10">[10]</a></sup></td></tr>
+<tr><td>Estey "suitcase" Custom / M series</td><td>1963 to 1967</td><td>M2, M4, M6, M7, M8, M9, M10, M10A, M12, M13, <span class="iam-st">M14 stereo</span>, <span class="iam-st">M15 / M15A stereo</span>, 432</td><td>M10, M13, M15 yes; M14 no; M2/M4/M6 no</td><td>Molded cabinets with the glowing badge. The M10 ($380, 38 watts, four varistors) was the best seller; its 12AU7 drives a Hammond tank with transistor recovery, an updated 480 reverb.<sup><a href="#iam-s20">[20]</a></sup> The M14 ($460, four 7189As, two 8s and two 3s, eight varistors) is the 280's true successor, an M15 without reverb, and sold poorly against Ampeg's $380 Super Echo Twin. The M15 went through four reverb designs in four years, ending with a tank driven straight from the channel 1 speaker output and an "Echo" knob that puts a neon-lamp photocell tremolo on the reverb signal.<sup><a href="#iam-s20">[20]</a></sup><sup><a href="#iam-s11">[11]</a></sup></td></tr>
+<tr><td>Badge-engineered siblings</td><td>late 1950s to mid 1960s</td><td>Twilighter (213R, 213, 260), Tonemaster Custom 62, Titano 314, PANaramic, DaVinci</td><td>Varies with the donor model</td><td>Magnatone built amps for distributors under other names. Twilighter was the LoDuca Brothers badge on 213 and 260 circuits, the Titano 314 a rebadged 413, the Tonemaster Custom 62 a rebadged 260.<sup><a href="#iam-s12">[12]</a></sup> Same circuits, different grille, usually cheaper on the vintage market.</td></tr>
+</table>
+
+<p>Nobody has published the spring count or decay time of the original tanks, and the archive that documents the circuits can only tell you which tube drove them and what recovered the signal. The reverb models in the next widget are therefore informed approximations: a Hammond-type two-spring pan with a dark germanium-transistor recovery for the 480, and a slightly brighter, shorter tank for the M10, with the 480's one-sided stereo quirk reproduced faithfully because that part is documented.<sup><a href="#iam-s20">[20]</a></sup></p>
+
+<h2>The transistor coda, 1967 to 1969</h2>
+
+<p>Magnatone's last act is almost unknown and truly strange. The tube Pro Series of 1966 had already slipped: the MP3 and MP5 replaced the varistors with a neon relaxation oscillator flashing a #1869 lamp onto a photocell, and that photocell merely turned the signal up and down. It was a tremolo wearing the vibrato name, the one time Magnatone itself used the word loosely.<sup><a href="#iam-s23">[23]</a></sup> Then, in November 1967, the company went solid state with the Brutes, and the real thing came back. The line topped out at the 300-watt-peak M35 "The Killer," two 15s, two horns, 105 pounds, a six-transistor spring reverb, and, the 1969 catalog insisted, "the only amplifier in the world with the thrilling effect of STEREO VIBRATO."<sup><a href="#iam-s21">[21]</a></sup> There were no varistors inside. Engineer Bill Layton kept the Moses bridge but replaced the silicon carbide with an incandescent lamp shining on photocells, the same swap the Schober organ company had made in 1963.<sup><a href="#iam-s5">[5]</a></sup><sup><a href="#iam-s24">[24]</a></sup></p>
+
+<p>The factory drawings survive, thanks to Don Garvin, an Estey engineer from 1968 to 1971 who scanned his own set, and the M35 schematic shows exactly how it was done. Vibrato board 35-0060 holds a transistor phase-shift oscillator with a 100k speed pot, an intensity pot, and a transistor that drives a #1869 lamp. Two cadmium sulfide photocells sit on the board under that lamp, each shunted by 100k and each forming the resistive arm of a bridge against a 0.01 microfarad capacitor, with a transistor phase splitter standing in for the triode, so the channel still gets two cascaded Moses stages. The second channel lives on a near-identical auxiliary board with its own lamp, fed from the first board's oscillator: two boards, two lamps, four photocells per amp.<sup><a href="#iam-s24">[24]</a></sup> A lamp has thermal lag and a photocell brightens fast and darkens slowly, so the sweep comes out smoother than the varistor version, and at fast rates it shallows and skews because the cell never fully recovers between cycles. The transistor modes in the widgets above use those values, with the lamp and photocell behaviour modeled from textbook data rather than measured from an amp. The 240SV accordion amp of November 1968 kept the stereo version, and production ran until late 1970, after which the brand was mothballed. The company went out still refusing to fake its vibrato.<sup><a href="#iam-s4">[4]</a></sup><sup><a href="#iam-s24">[24]</a></sup></p>
+
+<h2>The Uni-Vibe, the cousin from Japan</h2>
+
+<p>While Estey's engineers were laying out the M35's lamp-and-photocell board in Torrance in 1967, an engineer in Japan was finishing the same idea in a different box. Fumio Mieda had designed phase-shift circuits for organs, and said later that his effect was meant to recreate the drifting, swirling sound of shortwave radio under atmospheric interference, not a Leslie, whatever the catalogs implied. Honey sold it in Japan in 1967 as the Vibra Chorus; when Honey folded, Shin-ei took it over, added a speed pedal, and Univox put it in American stores in 1968 as the Uni-Vibe, where Jimi Hendrix made it the sound of Woodstock.<sup><a href="#iam-s25">[25]</a></sup></p>
+
+<p>Open one up and the bones are Bonham's. Each of its four stages is a transistor phase splitter feeding a Moses bridge, with a cadmium sulfide photocell as the swept arm, four cells under one lamp inside a mirrored shroud, and a transistor phase-shift oscillator driving the lamp. That is the 1967 Magnatone board almost component for component. The differences are what make it a different instrument. Magnatone used two stages per channel, both with the same 0.01 microfarad capacitor, so the whole sweep happens around one corner frequency and comes out as a clean pitch bend. The Uni-Vibe staggers its four stages across the spectrum, 0.015, 0.22, 0.00047 and 0.0047 microfarads, so different parts of the note get bent at different moments and the sweep comes out lumpy; its lamp idles at half brightness so the intensity knob swings the cells both ways; and its Chorus switch sums the swept signal back with the dry one, which turns the moving phase into moving notches. That last trick is why the world calls the Uni-Vibe a phaser. Flip it to Vibrato, which removes the dry signal, and it is a four-stage Magnatone in a pedal, with a bend that the model above says grows alarmingly at low frequencies because the big 0.22 microfarad stage swings hardest down there.<sup><a href="#iam-s25">[25]</a></sup></p>
+
+<p>Was anybody copying anybody? There is no record of a dispute. Bonham's patents were American, Honey built in Japan, Mieda credited his own organ work, and by 1967 the optical phase stage was already in Schober organ kits and in Ampeg's Gemini amps, so the idea was in the air on both sides of the Pacific.<sup><a href="#iam-s5">[5]</a></sup> There was never a factory stereo Uni-Vibe either. R.G. Keen documented a modification that takes the inverted output of the last stage to a second mixer, so one channel's notches sit where the other's peaks are; the stereo settings in the widget are my own what-if instead: in Vibrato the right channel sweeps 180 degrees out of phase with the left, and in Chorus the swept signal goes left and the dry signal right.<sup><a href="#iam-s25">[25]</a></sup></p>
+
+<h2>Pick an amp and hear it</h2>
+
+<p>Six of the amps above, the two student models, the two stereo flagships, and the two best-selling suitcases, with their actual feature sets. Mono or stereo, one or two modulator stages, and reverb only where the real amp had it. The oscilloscope shows the note as it leaves the speakers.</p>
+
+<!-- ============ WIDGET 3: PICK AN AMP ============ -->
+<div class="iam-card" id="iamW3">
+<h4>Six Magnatones on the bench</h4>
+<p class="iam-sub">Choose an amp. Left channel in green, right channel in yellow. Where they overlap, the colors mix.</p>
+<div class="iam-picks" id="iamW3picks"></div>
+<canvas id="iamW3c" width="900" height="260" role="img" aria-label="Oscilloscope showing the left and right audio channels of the selected amp model">Oscilloscope display of the selected amp's output.</canvas>
+<div class="iam-row">
+<button class="iam-btn" id="iamW3play">&#9654; Play</button>
+<button class="iam-btn iam-on" id="iamW3vib">Vibrato: on</button>
+<button class="iam-btn iam-on" id="iamW3rev">Reverb: on</button>
+</div>
+<div class="iam-row">
+<div class="iam-sl">speed <input type="range" id="iamW3rate" min="2" max="10" step="0.1" value="5" aria-label="Vibrato speed in hertz"><span id="iamW3rateV">5.0 Hz</span></div>
+<div class="iam-sl">depth <input type="range" id="iamW3depth" min="5" max="100" step="1" value="80" aria-label="Vibrato depth percent"><span id="iamW3depthV">80%</span></div>
+<div class="iam-sl" id="iamW3mixRow">reverb mix <input type="range" id="iamW3mix" min="0" max="100" step="1" value="35" aria-label="Reverb mix percent"><span id="iamW3mixV">35%</span></div>
+<div class="iam-sl">master <input type="range" id="iamW3vol" min="0" max="100" step="1" value="80" aria-label="Master volume percent"><span id="iamW3volV">80%</span></div>
+</div>
+<p class="iam-note" id="iamW3note"></p>
+</div>
+<script>
+(function(){
+"use strict";
+var M=window.iamModel; if(!M) return;
+var cv=document.getElementById("iamW3c"); if(!cv) return;
+var g=cv.getContext("2d");
+var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---- the six amps: documented feature sets ---- */
+var MODELS={
+  m213:{name:"210 / 213 Troubadour",years:"1957 to 1962",stereo:false,stages:1,tank:null,art:"combo",sub:"mono, two varistors, no reverb"},
+  m280:{name:"Custom 280",years:"1957 to 1962",stereo:true,stages:2,tank:null,art:"wide",sub:"stereo, eight varistors, no reverb"},
+  m413:{name:"410 / 413",years:"1961 to 1963",stereo:false,stages:1,tank:null,art:"combo2",sub:"mono, two varistors, no reverb"},
+  m480:{name:"Custom 480",years:"1961 to 1963",stereo:true,stages:2,tank:"t480",art:"wide480",sub:"stereo, eight varistors, reverb to output 2"},
+  m10:{name:"M10",years:"1963 to 1965",stereo:false,stages:2,tank:"tM10",art:"suit",sub:"mono, four varistors, reverb"},
+  m14:{name:"M14 Mighty Midget",years:"1963 to 1965",stereo:true,stages:2,tank:null,art:"suit2",sub:"stereo, eight varistors, no reverb"}
+};
+var ORDER=["m213","m280","m413","m480","m10","m14"];
+
+/* ---- simple original drawings of the cabinets ---- */
+function art(kind){
+  var s='<svg viewBox="0 0 120 84" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">';
+  var brown='fill="#6b4a2e" stroke="#3a2816" stroke-width="1.5"', grille='fill="#c9b48a"', dark='fill="#2b211a"', gold='fill="#d8b454"';
+  if(kind==="combo"||kind==="combo2"){
+    s+='<rect x="18" y="8" width="84" height="68" rx="6" '+brown+'/><rect x="24" y="12" width="72" height="8" '+dark+'/>';
+    s+='<rect x="24" y="24" width="72" height="46" rx="3" '+grille+'/><circle cx="60" cy="48" r="17" '+dark+'/>';
+    if(kind==="combo2") s+='<circle cx="86" cy="32" r="4" '+dark+'/>';
+    s+='<text x="30" y="38" font-size="11" font-weight="700" '+gold+' font-family="serif">V</text>';
+  } else if(kind==="wide"||kind==="wide480"){
+    s+='<rect x="4" y="12" width="112" height="60" rx="6" '+brown+'/><rect x="10" y="16" width="100" height="8" '+dark+'/>';
+    s+='<rect x="10" y="28" width="100" height="40" rx="3" '+grille+'/><circle cx="34" cy="48" r="15" '+dark+'/><circle cx="86" cy="48" r="15" '+dark+'/>';
+    if(kind==="wide480"){ s+='<ellipse cx="60" cy="38" rx="8" ry="5" '+dark+'/><ellipse cx="60" cy="58" rx="8" ry="5" '+dark+'/>'; }
+    else { s+='<circle cx="60" cy="38" r="4" '+dark+'/><circle cx="60" cy="58" r="4" '+dark+'/>'; }
+    s+='<text x="14" y="40" font-size="10" font-weight="700" '+gold+' font-family="serif">VV</text>';
+  } else if(kind==="suit"){
+    s+='<rect x="30" y="8" width="60" height="70" rx="8" fill="#2a2622" stroke="#c9a24a" stroke-width="1.5"/><rect x="50" y="3" width="20" height="6" rx="3" fill="#2a2622" stroke="#c9a24a"/>';
+    s+='<circle cx="60" cy="58" r="13" fill="#15110e"/><circle cx="60" cy="30" r="4" fill="#15110e"/><rect x="48" y="40" width="24" height="6" rx="2" fill="#f2d58a"/>';
+  } else {
+    s+='<rect x="14" y="8" width="92" height="70" rx="8" fill="#2a2622" stroke="#c9a24a" stroke-width="1.5"/><rect x="50" y="3" width="20" height="6" rx="3" fill="#2a2622" stroke="#c9a24a"/>';
+    s+='<circle cx="40" cy="58" r="12" fill="#15110e"/><circle cx="80" cy="58" r="12" fill="#15110e"/><circle cx="40" cy="30" r="4" fill="#15110e"/><circle cx="80" cy="30" r="4" fill="#15110e"/><rect x="48" y="40" width="24" height="6" rx="2" fill="#f2d58a"/>';
+    s+='<text x="54" y="25" font-size="9" font-weight="700" fill="#c9a24a" font-family="serif">VV</text>';
+  }
+  return s+'</svg>';
+}
+var picks=document.getElementById("iamW3picks");
+ORDER.forEach(function(id){
+  var m=MODELS[id], b=document.createElement("button");
+  b.type="button"; b.className="iam-pick"; b.setAttribute("data-id",id);
+  b.innerHTML=art(m.art)+"<b>"+m.name+"</b><small>"+m.years+"<br>"+m.sub+"</small><span class='iam-chk'>&#10003; selected</span>";
+  b.onclick=function(){ select(id); };
+  picks.appendChild(b);
+});
+
+/* ---- state ---- */
+var cur="m480", playing=false, vibOn=true, revOn=true, rate=5, depth=0.8, mix=0.35, vol=0.8;
+var actx=null,src=null,nodes=[],voices=[],wet=null,master=null,anL=null,anR=null,t0=0,irCache={};
+
+/* ---- spring reverb tank models (synthesized impulse responses) ----
+   The archive documents the circuits (6DR7 or 12AU7 drive, germanium transistor
+   recovery) but not the pans themselves, so these are informed approximations:
+   dispersive chirp echoes from each spring plus a diffuse tail, then the
+   recovery stage's bandwidth. */
+var TANKS={
+  t480:{springs:[0.036,0.043],decay:2.3,hf:3200,fhi:2600,label:"two long springs, dark germanium recovery"},
+  tM10:{springs:[0.029,0.034,0.039],decay:1.8,hf:4800,fhi:3400,label:"three shorter springs, brighter recovery"}
+};
+function springIR(ctx,id){
+  if(irCache[id]) return irCache[id];
+  var t=TANKS[id], sr=ctx.sampleRate, len=Math.floor(sr*(t.decay+0.4)), buf=ctx.createBuffer(2,len,sr), ch, s, k, n;
+  for(ch=0;ch<2;ch++){
+    var d=buf.getChannelData(ch), seed=(ch+1)*777;
+    for(s=0;s<t.springs.length;s++){
+      var T=t.springs[s]*(1+0.02*ch), L=Math.floor(T*sr*0.8);
+      for(k=0;k*T<t.decay+0.2;k++){
+        var start=Math.floor(k*T*sr), amp=Math.exp(-k*T/t.decay)/t.springs.length, ph=0;
+        for(n=0;n<L&&start+n<len;n++){
+          var u=n/L, f=t.fhi*Math.pow(300/t.fhi,u);
+          ph+=2*Math.PI*f/sr;
+          d[start+n]+=amp*Math.sin(ph)*Math.sin(Math.PI*u);
+        }
+      }
+    }
+    var lp=0, hp=0, kl=1-Math.exp(-2*Math.PI*t.hf/sr), kh=1-Math.exp(-2*Math.PI*150/sr);
+    for(n=0;n<len;n++){
+      seed=(seed*1103515245+12345)&0x7fffffff;
+      var noise=(seed/0x3fffffff-1)*0.12*Math.exp(-n/(sr*t.decay*0.6));
+      var x=d[n]+noise;
+      lp+=(x-lp)*kl; hp+=(lp-hp)*kh;
+      d[n]=lp-hp;
+    }
+    var peak=0; for(n=0;n<len;n++){ if(Math.abs(d[n])>peak)peak=Math.abs(d[n]); }
+    var fadeN=Math.floor(sr*0.35);
+    for(n=0;n<len;n++){ var fg=n>len-fadeN?(len-n)/fadeN:1; d[n]*=0.6*fg/peak; }
+  }
+  irCache[id]=buf; return buf;
+}
+
+function cycleFor(m,invert){ return M.tubeCycle(depth,m.stages,invert); }
+function stopAudio(){
+  nodes.forEach(function(n){try{n.disconnect();}catch(e){}});
+  voices.forEach(function(v){v.nodes.forEach(function(n){try{n.disconnect();}catch(e){}});});
+  if(src){try{src.stop();}catch(e){} src=null;}
+  nodes=[];voices=[];wet=null;master=null;anL=null;anR=null;playing=false;
+  document.getElementById("iamW3play").innerHTML="&#9654; Play";
+  document.getElementById("iamW3play").classList.remove("iam-on");
+}
+function startAudio(){
+  if(!actx) actx=new (window.AudioContext||window.webkitAudioContext)();
+  actx.resume(); stopAudio();
+  var m=MODELS[cur];
+  src=window.iamSynth(actx);
+  master=actx.createGain(); master.gain.value=vol*0.9; nodes.push(master);
+  var mg=actx.createChannelMerger(2); mg.connect(master); nodes.push(mg);
+  var L=actx.createGain(),R=actx.createGain(); L.connect(mg,0,0); R.connect(mg,0,1); nodes.push(L,R);
+  t0=actx.currentTime+0.02;
+  if(m.stereo){
+    voices.push(M.voice(actx,src,L,cycleFor(m,false),rate,t0));
+    voices.push(M.voice(actx,src,R,cycleFor(m,true),rate,t0));
+  } else {
+    var bus=actx.createGain(); bus.connect(L); bus.connect(R); nodes.push(bus);
+    voices.push(M.voice(actx,src,bus,cycleFor(m,false),rate,t0));
+  }
+  voices.forEach(function(v){ v.enable(vibOn); });
+  if(m.tank){
+    var conv=actx.createConvolver(); conv.buffer=springIR(actx,m.tank);
+    wet=actx.createGain(); wet.gain.value=revOn?mix:0;
+    var mono=actx.createGain(); mono.channelCount=1; mono.channelCountMode="explicit";
+    src.connect(conv); conv.connect(mono); mono.connect(wet);
+    if(m.tank==="t480"){ wet.connect(R); } else { wet.connect(L); wet.connect(R); }
+    nodes.push(conv,mono,wet);
+  }
+  var split=actx.createChannelSplitter(2); master.connect(split);
+  anL=actx.createAnalyser(); anR=actx.createAnalyser(); anL.fftSize=2048; anR.fftSize=2048;
+  split.connect(anL,0); split.connect(anR,1); nodes.push(split,anL,anR);
+  master.connect(actx.destination);
+  src.start(t0); playing=true;
+  document.getElementById("iamW3play").innerHTML="&#9632; Stop";
+  document.getElementById("iamW3play").classList.add("iam-on");
+}
+
+function note(){
+  var m=MODELS[cur], s=m.name+": "+(m.stereo?"stereo vibrato, two countersweeping channels":"mono vibrato, both speakers in step")+
+    (m.stages===2?", two cascaded modulator stages.":", one modulator stage.");
+  if(m.tank) s+=" Reverb: "+TANKS[m.tank].label+(m.tank==="t480"?", returned to the right side only, as the real 480 does.":".");
+  else s+=" This model had no reverb, so the reverb controls are disabled.";
+  document.getElementById("iamW3note").textContent=s;
+}
+function select(id){
+  cur=id;
+  Array.prototype.forEach.call(picks.children,function(b){ b.classList.toggle("iam-on",b.getAttribute("data-id")===id); b.setAttribute("aria-pressed",b.getAttribute("data-id")===id?"true":"false"); });
+  var m=MODELS[id], hasRev=!!m.tank;
+  var rb=document.getElementById("iamW3rev"), mr=document.getElementById("iamW3mixRow");
+  rb.disabled=!hasRev; rb.classList.toggle("iam-on",hasRev&&revOn); rb.textContent="Reverb: "+(hasRev?(revOn?"on":"off"):"none on this model");
+  mr.classList.toggle("iam-off",!hasRev); document.getElementById("iamW3mix").disabled=!hasRev;
+  note();
+  if(playing) startAudio();
+}
+function refresh(){
+  if(playing){
+    var m=MODELS[cur];
+    voices.forEach(function(v,i){ v.update(cycleFor(m,i===1),rate); });
+    if(wet) wet.gain.value=revOn?mix:0;
+    if(master) master.gain.value=vol*0.9;
+  }
+}
+function slider(id,fn){
+  var el=document.getElementById(id);
+  el.oninput=function(){ fn(parseFloat(this.value)); el.setAttribute("aria-valuetext",document.getElementById(id+"V").textContent); refresh(); };
+}
+slider("iamW3rate",function(v){ rate=v; document.getElementById("iamW3rateV").textContent=v.toFixed(1)+" Hz"; });
+slider("iamW3depth",function(v){ depth=v/100; document.getElementById("iamW3depthV").textContent=Math.round(v)+"%"; });
+slider("iamW3mix",function(v){ mix=v/100; document.getElementById("iamW3mixV").textContent=Math.round(v)+"%"; });
+slider("iamW3vol",function(v){ vol=v/100; document.getElementById("iamW3volV").textContent=Math.round(v)+"%"; });
+document.getElementById("iamW3play").onclick=function(){ if(playing) stopAudio(); else startAudio(); };
+document.getElementById("iamW3vib").onclick=function(){ vibOn=!vibOn; this.classList.toggle("iam-on",vibOn); this.textContent="Vibrato: "+(vibOn?"on":"off"); voices.forEach(function(v){v.enable(vibOn);}); };
+document.getElementById("iamW3rev").onclick=function(){ revOn=!revOn; select(cur); refresh(); };
+select("m480");
+
+/* ---- oscilloscope ---- */
+var bufL=new Float32Array(2048), bufR=new Float32Array(2048);
+function scope(){
+  var W=cv.width,H=cv.height,mid=H/2,i,x;
+  g.fillStyle="#0e120e"; g.fillRect(0,0,W,H);
+  g.strokeStyle="#1f2a1f"; g.lineWidth=1; g.beginPath();
+  for(i=1;i<8;i++){ g.moveTo(0,H*i/8); g.lineTo(W,H*i/8); }
+  for(i=1;i<10;i++){ g.moveTo(W*i/10,0); g.lineTo(W*i/10,H); }
+  g.stroke();
+  g.strokeStyle="#2f3f2f"; g.beginPath(); g.moveTo(0,mid); g.lineTo(W,mid); g.stroke();
+  g.font="11px sans-serif"; g.fillStyle="rgba(80,235,120,0.8)"; g.fillText("L",12,16);
+  g.fillStyle="rgba(250,215,70,0.8)"; g.fillText("R",30,16);
+  g.fillStyle="#8d8475"; g.fillText(MODELS[cur].name+(playing?"":"  (press play)"),W-230,16);
+  if(!(playing&&anL)) return;
+  anL.getFloatTimeDomainData(bufL); anR.getFloatTimeDomainData(bufR);
+  var start=0; for(i=1;i<600;i++){ if(bufL[i-1]<=0&&bufL[i]>0){ start=i; break; } }
+  var n=1400, gain=H*0.42;
+  function drawCh(buf,color){
+    g.strokeStyle=color; g.lineWidth=2.2; g.beginPath();
+    for(i=0;i<n;i++){ x=W*i/n; var y=mid-buf[start+i]*gain*2.2; i===0?g.moveTo(x,y):g.lineTo(x,y); }
+    g.stroke();
+  }
+  drawCh(bufL,"rgba(80,235,120,0.34)");
+  drawCh(bufR,"rgba(250,215,70,0.34)");
+}
+scope();
+(function loop(){ if(!reduce||playing) scope(); requestAnimationFrame(loop); })();
+})();
+</script>
+
+<h2>The people who made it famous</h2>
+
+<p>The Magnatone story has a patient zero, and it is not who most people guess. Robert Ward, leader of Dayton's Ohio Untouchables, the band that later became the Ohio Players, bought a Magnatone at a local music store and built his entire guitar identity around its watery shimmer. That is his vibrato winding through the Falcons' 1962 gospel-soul landmark "I Found a Love," behind a young Wilson Pickett.<sup><a href="#iam-s13">[13]</a></sup></p>
+
+<p>Lonnie Mack heard Ward and went straight out and got his own. A year later came <a href="https://youtu.be/lv8TmAUA7Rw?si=8zN1kjboq5rS1TsW" target="_blank" rel="noopener">"Wham!", the 1963 instrumental</a> that put Magnatone vibrato on the map forever and reportedly sold Stevie Ray Vaughan his first single.<sup><a href="#iam-s19">[19]</a></sup> Listen for the way the pitch leans into each held note rather than pulsing; that is the varistor bridge doing its job, and no tremolo amp of the day could have made that sound. Mack used Magnatone vibrato amps almost exclusively for the rest of his career.<sup><a href="#iam-s14">[14]</a></sup></p>
+
+<p>Buddy Holly picked up a Custom 280 in September 1958, only months before his death, and that stereo warble is part of the late Holly recordings' DNA. The amp itself survived him: his widow eventually gave it to Emmylou Harris, who recorded with it in the late 1980s.<sup><a href="#iam-s15">[15]</a></sup> Bo Diddley ran Magnatones too, and told Rolling Stone of his first one, <q>It was a 25-watt Magnatone, and back then they said it was too loud.</q><sup><a href="#iam-s22">[22]</a></sup> Scotty Moore, the man who invented rock and roll guitar behind Elvis, kept a late-fifties 213 Troubadour at home for recording until the end.<sup><a href="#iam-s9">[9]</a></sup> And the amps never really left the stage: Neil Young has run a vintage 280 in his live rig for decades, with his tech feeding a padded-down Fender Deluxe output into it purely for that stereo vibrato,<sup><a href="#iam-s17">[17]</a></sup> and Alex Turner leaned on a vintage Custom 410 and a 480 for the vibrato-soaked textures all over Arctic Monkeys' AM era.<sup><a href="#iam-s18">[18]</a></sup></p>
+
+<h2>Bending time with sand and wire</h2>
+
+<p>Every modern vibrato, chorus, and pitch shifter is a memory device: tape, buckets of capacitors, or RAM, all storing the past so it can be replayed at the wrong speed. Magnatone had none of those and shipped real pitch bending anyway, by noticing that phase is a back door into time, and that a disc of silicon carbide could be talked into opening it five times a second. When the varistors ran out they did it again with a light bulb and a photocell, and when the company ran out the idea went dormant for fifty years. There are not many circuits from 1957 that still cannot be bought in a convincing single-chip version. This is one of them.</p>
+
+<p>Next up in this series: Fender's brownface harmonic tremolo, the other great misnamed modulation of the era, which splits the guitar in two and rocks the halves against each other. If the Magnatone bends time, the harmonic tremolo bends tone, and the circuit is just as sneaky.</p>
+
+<h3>Sources</h3>
+<ol class="iam-src">
+<li id="iam-s1"><a href="https://en.wikipedia.org/wiki/Vibrato_unit">Vibrato unit, Wikipedia</a>, on the Fender naming reversal.</li>
+<li id="iam-s2"><a href="https://www.premierguitar.com/articles/30422-Crazy-Tube-Circuits-Killer-V-vibrato-overdrive-pedal-review-Magnatone">Premier Guitar, Killer V review</a>, on the V and double-V emblems.</li>
+<li id="iam-s3"><a href="http://www.magnatoneamps.com/">MagnatoneAmps.com (Douglas Ahern)</a>, on the F.M. Vibrato name.</li>
+<li id="iam-s4"><a href="http://www.magnatoneamps.com/history.html">The History of the Magnatone Amplifier, MagnatoneAmps.com</a>: Bonham's arrival, the Estey years, the solid-state vibrato, and the end of production.</li>
+<li id="iam-s5"><a href="https://dalmura.com.au/static/Magnatone%20vibrato%20design.pdf">Tim Robbins, Magnatone Vibrato Design (dalmura.com.au)</a>: the Moses bridge, varistor data, the lamp and photocell successor, and patents <a href="https://patents.google.com/patent/US2988706">2,988,706</a>, <a href="https://patents.google.com/patent/US3083606">3,083,606</a> and <a href="https://patents.google.com/patent/US3160695">3,160,695</a>. The circuit model behind the graphics on this page is built from the measurements in this paper.</li>
+<li id="iam-s6"><a href="https://www.andybaxterbass.com/products/1961-magnatone-custom-260">Andy Baxter Bass, 1961 Custom 260 listing</a>.</li>
+<li id="iam-s7"><a href="https://vintageguitar.com/16040/magnatone-twilighter">Vintage Guitar, "King of Vibrato"</a>, Billy Gibbons on the original circuit.</li>
+<li id="iam-s8"><a href="https://retrofret.com/products/magnatone-custom-280-tube-amplifier-1961-12063">Retrofret, 1961 Custom 280 listing</a>.</li>
+<li id="iam-s9"><a href="https://scottymoore.net/magnatone2.html">ScottyMoore.net, Magnatone Troubadour Model 213</a>, with the 1957 catalog copy and pricing.</li>
+<li id="iam-s10"><a href="https://www.premierguitar.com/articles/21792-trash-or-treasure-magnatone-custom-440">Premier Guitar, Trash or Treasure: Magnatone Custom 440</a>; <a href="https://irationaudio.com/2016/09/25/magnatone-480/">Iration Audio, Magnatone 480</a>; <a href="https://www.retrofret.com/product.asp?ProductID=10547">Retrofret, Custom 410 "Diana"</a>; <a href="https://mmguitarbar.com/products/rev-39102849">MM Guitar Bar, 460 "Victory"</a>.</li>
+<li id="iam-s11"><a href="https://creamcitymusic.com/vintage-1963-magnatone-m10-25w-tube-combo-amp">Cream City Music, 1963 M10</a>; <a href="https://mmguitarbar.com/products/1964-magnatone-custom-m14-vintage-tube-amp-w-stereo-vibrato-2x8-jensen-oxford-estey">MM Guitar Bar, 1964 M14 with stereo vibrato</a>.</li>
+<li id="iam-s12"><a href="https://bluebookofguitarvalues.com/guitar-amplifiers/manufacturers/TWILIGHTER">Blue Book of Guitar Values, Twilighter</a>; <a href="https://www.creamcitymusic.com/vintage-tonemaster-custom-62-35w-2x12-tube-combo-amp-1965">Cream City Music, Tonemaster Custom 62</a>.</li>
+<li id="iam-s13"><a href="https://magnetmagazine.com/2019/08/28/the-basement-vapes-volume-eight-i-found-a-love-and-its-magnatone/">Magnet Magazine, "I Found A Love ... And It's Magnatone" (Mitch Myers)</a>; <a href="https://en.wikipedia.org/wiki/Robert_Ward_(blues_musician)">Robert Ward, Wikipedia</a>.</li>
+<li id="iam-s14"><a href="https://en.wikipedia.org/wiki/Magnatone">Magnatone, Wikipedia</a>, and Magnet Magazine above, on Mack hearing Ward first.</li>
+<li id="iam-s15">Dave Hunter, "Buddy Holly's '58 Magnatone 280," Vintage Guitar, September 2011, including the amp's later life with Emmylou Harris; <a href="https://www.musicradar.com/news/guitars/magnatone-amps-a-history-and-the-rebirth-605678">Guitarist via MusicRadar</a>.</li>
+<li id="iam-s16"><a href="https://www.musicradar.com/news/guitars/magnatone-amps-a-history-and-the-rebirth-605678">Guitarist, "Magnatone amps: a history" (MusicRadar)</a>.</li>
+<li id="iam-s17"><a href="https://www.musicradar.com/news/guitars/namm-2013-legendary-amp-brand-magnatone-returns-569924">MusicRadar on Neil Young's vintage 280</a>, and his tech Larry Cragg's rig descriptions.</li>
+<li id="iam-s18"><a href="https://equipboard.com/items/magnatone-custom-410">Equipboard, Alex Turner's Magnatone Custom 410</a>, citing Sound on Sound.</li>
+<li id="iam-s19"><a href="https://youtu.be/lv8TmAUA7Rw?si=8zN1kjboq5rS1TsW">Lonnie Mack, "Wham!" (1963), YouTube</a>.</li>
+<li id="iam-s20">MagnatoneAmps.com model pages: <a href="http://www.magnatoneamps.com/213.html">213</a>, <a href="http://www.magnatoneamps.com/280A.html">280A</a>, <a href="http://www.magnatoneamps.com/410.html">410</a>, <a href="http://www.magnatoneamps.com/413.html">413</a>, <a href="http://www.magnatoneamps.com/480.html">480</a>, <a href="http://www.magnatoneamps.com/M10.html">M10</a>, <a href="http://www.magnatoneamps.com/M14.html">M14</a>, <a href="http://www.magnatoneamps.com/M15reverb.html">M15 reverb designs</a>, <a href="http://www.magnatoneamps.com/250.html">250</a>, <a href="http://www.magnatoneamps.com/440.html">440</a>, <a href="http://www.magnatoneamps.com/450.html">450</a>, <a href="http://www.magnatoneamps.com/460.html">460</a>: varistor counts, reverb circuits, the M14 Stereo Vibrato switch, and the 480's reverb routing.</li>
+<li id="iam-s21"><a href="http://www.vibroworld.net/magnatone/archive.html">Vibroworld Magnatone archive</a> and its <a href="http://www.vibroworld.net/magnatone/M35.html">M35 "The Killer" page</a>, with the 1969 catalog; <a href="https://www.vintageguitar.com/33329/one-unforgettable-60s-oddity-magnatone/">Vintage Guitar, "One unforgettable '60s oddity"</a>.</li>
+<li id="iam-s22"><a href="https://www.rollingstone.com/music/music-news/the-indestructible-beat-of-bo-diddley-59117/3/">Rolling Stone, "The Indestructible Beat of Bo Diddley"</a>.</li>
+<li id="iam-s23">MagnatoneAmps.com design pages: <a href="http://www.magnatoneamps.com/FMvibrato.html">F.M. Vibrato</a> (Tony Price's explanation, varistor configurations, the patent language), <a href="http://www.magnatoneamps.com/varistors.html">Varistors</a>, <a href="http://www.magnatoneamps.com/neon.html">Neon bulbs</a> (the Pro Series lamp and photocell circuit).</li>
+<li id="iam-s24"><a href="http://www.magnatoneamps.com/solidstate.html">MagnatoneAmps.com, Solid State 1967 to 1970</a>, and the Don Garvin document set on <a href="https://web.archive.org/web/20180317083657/http://www.magnatoneamps.com/solidstate-schematics.html">Solid-State schematics and documentation</a> (Wayback Machine capture, 17 March 2018), including the <a href="https://web.archive.org/web/20191106125618/http://www.magnatoneamps.com/schematicsSS/M35-schematic.jpg">M35 schematic</a> (capture, 6 November 2019); the live copies of these files were not reachable when this was written.</li>
+<li id="iam-s25"><a href="http://www.geofex.com/article_folders/univibe/univtech.htm">R.G. Keen, "The Technology of the Univibe" (geofex.com)</a>: the four stages, capacitor values, lamp bias, mixer and the stereo modification; <a href="https://www.premierguitar.com/articles/stompbox-classics-univibe-1">Premier Guitar, "Stompbox Classics: Univibe"</a> (Fumio Mieda interview); <a href="https://classicamplification.net/24inf/uvh.html">Classic Amplification, Vintage Uni-Vibe history</a>; <a href="https://www.guitarplayer.com/gear/the-univox-uni-vibe-was-the-final-stompbox-to-land-in-jimi-hendrixs-effects-chain">Guitar Player (Dave Hunter) on the Honey Vibra Chorus, Shin-ei and Hendrix</a>; <a href="https://en.wikipedia.org/wiki/Uni-Vibe">Uni-Vibe, Wikipedia</a> (the radio inspiration).</li>
+</ol>
+
+<p><em>Written and modeled at Illicit Apothecary by Jason Goldkamp. The simulation behind the widgets is original work; sources above were used for history and specifications, and all quoted phrases are credited where they appear. The spring reverb in the last demo is an informed approximation of the original tanks, not a measurement of one.</em></p>
+</div>
+
+</main></body></html>
