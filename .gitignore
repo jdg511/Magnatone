@@ -7,3 +7,5 @@
 !patch_v*.ps1
 !loops/
 !loops/*
+loops/2sp-long.wav
+loops/3sp-sh.wav
